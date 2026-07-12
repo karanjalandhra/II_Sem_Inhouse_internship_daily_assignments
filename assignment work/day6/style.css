@@ -1,0 +1,12 @@
+body{
+    background:#f2f2f2;
+}
+
+.card{
+    margin-top:20px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}

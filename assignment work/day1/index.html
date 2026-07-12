@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Information</title>
+
+    <style>
+      #profile_sec {
+        border: solid black;
+        border-radius: 20px;
+        width: 500px;
+        padding: 15px;
+        text-align: center;
+      }
+      #my_photo {
+        width: 60px;
+        border: solid black;
+      }
+      #eduction_id {
+        border: solid black;
+        border-radius: 20px;
+        margin-left: 10px;
+        padding: 15px;
+        width: 400px;
+      }
+      #skills_id {
+        border: solid black;
+        width: 400px;
+        margin-left: 10px;
+        padding: 15px;
+        border-radius: 20px;
+      }
+      .box1 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 80px;
+      }
+      .first_div {
+        display: flex;
+        justify-content: space-between;
+      }
+      #website_id {
+        border: solid black;
+        margin: 20px;
+        padding: 15px;
+        width: 400px;
+        height: 150px;
+        border-radius: 10px;
+      }
+      #student_form{
+        border: solid black;
+        border-radius: 10px;
+        height: 150px;
+        width: 400px;
+        margin: 20px;
+        padding: 15px;
+        
+      }
+      #second_div{
+        display: flex;
+          justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="first_div">
+      <div id="profile_sec">
+        <div class="box1">
+          <div>
+            <img src="profile logo.svg" alt="profile image " />
+            Profile Section
+          </div>
+          <div>
+            <img src="my photo.jpg" alt="" id="my_photo" />
+          </div>
+        </div>
+        <div>
+          <h1>NAME :-KARAN KUMAR</h1>
+          <h1>College :- Skti Jaipur</h1>
+          <h1>Branch:- CSE</h1>
+        </div>
+      </div>
+      <div id="eduction_id">
+        <img src="eduction logo.svg" alt="" />
+        <div>
+          <table border="2">
+            <caption>
+              Eduction Details
+            </caption>
+            <tr>
+              <td>S.No.</td>
+              <td>class</td>
+              <td>Institute Name</td>
+              <td>Year</td>
+              <td>percentage</td>
+            </tr>
+            <tr>
+              <td>1.</td>
+              <td>10th</td>
+              <td>Bright School</td>
+              <td>2021</td>
+              <td>97</td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>12th</td>
+              <td>Bright School</td>
+              <td>2023</td>
+              <td>91</td>
+            </tr>
+            <tr>
+              <td>3.</td>
+              <td>1st year</td>
+              <td>Skit Jaipur</td>
+              <td>2026</td>
+              <td>8.7</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="skills_id">
+        <img src="skills.svg" alt="" />
+        <h2>skills</h2>
+        <ol>
+          <li>c language</li>
+          <li>c++ language</li>
+          <li>OOPs</li>
+          <li>DSA In C++ learning</li>
+        </ol>
+      </div>
+    </div>
+    <div id="second_div">
+      <div id="website_id">
+        <img src="link image.svg" alt="" />
+        <div>
+          <h2>Favourite Website</h2>
+          <a href="https://in.linkedin.com/"> linkedin</a>
+          <br><br>
+          <a href="https://in.instagram.com/"> instagram</a>
+        </div>
+      </div>
+      <div id="student_form">
+        <img src="contact form.svg" alt="" />
+        <div>
+          <form action="//submit ">
+            <label for="Student Name"> Enter Student Name :-</label>
+            <input type="text" id="Student Name" required> <br>
+            <label for="E-mail"> Enter E-mail :-</label>
+            <input type="text" id="E-mail"> <br>
+            <label for="massage" > massage fields :-</label>
+            <textarea name="text_area" id="massage" > Default text here !</textarea> <br>
+            <input type="submit" name="submit_button" id="submit_form">
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

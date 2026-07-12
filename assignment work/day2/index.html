@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#dfe9f3;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:450px;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align:center;
+    color:#1e3a8a;
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-top:12px;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+input,
+select{
+    width:100%;
+    padding:10px;
+    border:1px solid #999;
+    border-radius:6px;
+    font-size:15px;
+}
+
+.gender{
+    margin-top:8px;
+}
+
+.gender input{
+    width:auto;
+}
+
+button{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0f172a;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h2>Student Registration Form</h2>
+
+<form>
+
+<label>Full Name</label>
+<input
+type="text"
+placeholder="Enter your name"
+required>
+
+<label>Email</label>
+<input
+type="email"
+placeholder="Enter your email"
+required>
+
+<label>Phone Number</label>
+<input
+type="tel"
+placeholder="Enter phone number"
+maxlength="10"
+required>
+
+<label>Gender</label>
+
+<div class="gender">
+<input type="radio" name="gender" required> Male
+
+<input type="radio" name="gender"> Female
+
+<input type="radio" name="gender"> Other
+</div>
+
+<label>Date of Birth</label>
+<input
+type="date"
+required>
+
+<label>Department</label>
+
+<select required>
+<option value="">Select Department</option>
+<option>CSE</option>
+<option>IT</option>
+<option>ECE</option>
+<option>Mechanical</option>
+<option>Civil</option>
+</select>
+
+<label>Password</label>
+<input
+type="password"
+placeholder="Create Password"
+minlength="6"
+required>
+
+<label>Confirm Password</label>
+<input
+type="password"
+placeholder="Confirm Password"
+minlength="6"
+required>
+
+<button type="submit">
+Register
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
